@@ -1,0 +1,58 @@
+[
+  {
+    "event": "Pilot Operations",
+    "start": "2025-08-20 08:15",
+    "end": null,
+    "location": null,
+    "description": "Pilot boarded vessel at Singapore pilot boarding ground"
+  },
+  {
+    "event": "Mooring",
+    "start": "2025-08-20 10:00",
+    "end": null,
+    "location": null,
+    "description": "All fast, mooring operations completed"
+  },
+  {
+    "event": "Cargo Operations",
+    "start": "2025-08-20 10:30",
+    "end": null,
+    "location": null,
+    "description": "Commenced cargo discharge operations"
+  },
+  {
+    "event": "Mooring Complete",
+    "start": "2025-08-20 10:30",
+    "end": null,
+    "location": null,
+    "description": null
+  },
+  {
+    "event": "Cargo Operations",
+    "start": "2025-08-20 14:00",
+    "end": null,
+    "location": null,
+    "description": "Cargo discharge completed"
+  },
+  {
+    "event": "Departure",
+    "start": "2025-08-20 15:30",
+    "end": null,
+    "location": null,
+    "description": "Vessel departed berth"
+  },
+  {
+    "event": "Departure",
+    "start": "2025-08-20 16:00",
+    "end": null,
+    "location": "berth",
+    "description": null
+  },
+  {
+    "event": "Pilot Operations",
+    "start": "2025-08-20 16:00",
+    "end": null,
+    "location": null,
+    "description": "Pilot disembarked at pilot ground"
+  }
+]

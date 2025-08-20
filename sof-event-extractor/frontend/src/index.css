@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-maritime-gray-900 bg-maritime-light;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-semibold text-maritime-navy;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-4 py-2 bg-maritime-navy text-white font-medium rounded-lg hover:bg-maritime-blue transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-maritime-blue focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-4 py-2 bg-white text-maritime-navy font-medium rounded-lg border border-maritime-gray-300 hover:bg-maritime-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-maritime-blue focus:ring-offset-2;
+  }
+  
+  .card {
+    @apply bg-white rounded-xl shadow-maritime p-6 border border-maritime-gray-200;
+  }
+  
+  .card-large {
+    @apply bg-white rounded-xl shadow-maritime-lg p-8 border border-maritime-gray-200;
+  }
+  
+  .input-field {
+    @apply block w-full px-3 py-2 border border-maritime-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-maritime-blue focus:border-maritime-blue transition-colors duration-200;
+  }
+  
+  .upload-zone {
+    @apply border-2 border-dashed border-maritime-gray-300 rounded-xl p-8 text-center transition-colors duration-200 hover:border-maritime-blue hover:bg-maritime-gray-50;
+  }
+  
+  .upload-zone-active {
+    @apply border-maritime-blue bg-maritime-blue bg-opacity-5;
+  }
+  
+  .table-stripe {
+    @apply odd:bg-white even:bg-maritime-gray-50;
+  }
+  
+  .status-processing {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800;
+  }
+  
+  .status-completed {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-green-100 text-green-800;
+  }
+  
+  .status-failed {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-100 text-red-800;
+  }
+}
+
+@layer utilities {
+  .text-maritime-gradient {
+    @apply bg-gradient-to-r from-maritime-navy to-maritime-blue bg-clip-text text-transparent;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-maritime-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-maritime-gray-400 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-maritime-gray-500;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 2px solid #f3f4f6;
+  border-radius: 50%;
+  border-top: 2px solid #001F3F;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Maritime wave animation */
+.wave-animation {
+  background: linear-gradient(-45deg, #001F3F, #0074D9, #001F3F, #0074D9);
+  background-size: 400% 400%;
+  animation: wave 4s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}

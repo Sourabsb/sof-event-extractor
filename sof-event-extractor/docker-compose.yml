@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  sof-extractor:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=false
+      - LOG_LEVEL=INFO
+      - MAX_FILE_SIZE=10485760
+      - MAX_CONCURRENT_JOBS=10
+    volumes:
+      - ./uploads:/app/uploads
+      - ./results:/app/results
+    env_file:
+      - backend/.env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Optional: Add database for production
+  # postgres:
+  #   image: postgres:13
+  #   environment:
+  #     POSTGRES_DB: sof_extractor
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: password
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+
+  # Optional: Add Redis for job queue
+  # redis:
+  #   image: redis:6-alpine
+  #   ports:
+  #     - "6379:6379"
+
+volumes:
+  postgres_data:

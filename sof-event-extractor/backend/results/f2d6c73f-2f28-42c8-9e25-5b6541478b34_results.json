@@ -1,0 +1,11 @@
+[
+  {
+    "event": "Document Validation Warning",
+    "description": "The uploaded document does not contain required maritime event details (event types, start/end times, or locations). Please ensure the document is a proper Statement of Facts or maritime incident report.",
+    "start": "Not Available",
+    "end": "Not Available",
+    "location": "Not Available",
+    "severity": "Warning",
+    "suggestion": "Upload a document containing maritime incidents with proper timestamps and event descriptions"
+  }
+]

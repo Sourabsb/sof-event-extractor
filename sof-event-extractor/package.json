@@ -1,0 +1,35 @@
+{
+  "name": "sof-event-extractor",
+  "version": "1.0.0",
+  "description": "AI-powered maritime document processing for Statement of Facts",
+  "main": "index.js",
+  "scripts": {
+    "setup": "./setup.sh",
+    "dev": "concurrently \"cd backend && source venv/bin/activate && uvicorn app:app --reload\" \"cd frontend && npm start\"",
+    "build": "cd frontend && npm run build",
+    "test": "cd backend && python -m pytest && cd ../frontend && npm test",
+    "deploy": "echo 'Deploy script placeholder'"
+  },
+  "keywords": [
+    "maritime",
+    "document-processing",
+    "ai",
+    "nlp",
+    "statement-of-facts",
+    "shipping",
+    "port-operations"
+  ],
+  "author": "Maritime AI Solutions",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/sof-event-extractor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/sof-event-extractor/issues"
+  },
+  "homepage": "https://github.com/your-username/sof-event-extractor#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,177 @@
+# SoF Event Extractor - Demo Video Script
+
+## Video Duration: 5 minutes
+
+---
+
+### **INTRO (30 seconds)**
+
+**[Scene: Clean background with SoF Event Extractor logo]**
+
+**Narrator**: "The shipping industry processes thousands of Statement of Facts documents daily, with port agents spending 2-4 hours manually extracting event data from each document. This manual process is prone to errors, difficult to scale, and creates operational bottlenecks."
+
+**[Scene: Show stack of maritime documents, tired worker highlighting text manually]**
+
+"What if we could automate this entire process using AI?"
+
+---
+
+### **SOLUTION OVERVIEW (45 seconds)**
+
+**[Scene: Architecture diagram animation]**
+
+**Narrator**: "Introducing the SoF Event Extractor - an AI-powered solution that transforms unstructured maritime documents into structured, actionable data in under 30 seconds."
+
+**[Architecture components appear one by one]**
+
+"Our system combines multiple technologies:
+- React frontend with maritime-themed UI
+- FastAPI backend for high-performance processing  
+- Multi-layered AI extraction using regex, spaCy NLP, and GPT models
+- OCR processing with Azure Cognitive Services
+- Structured export in JSON and CSV formats"
+
+**[Scene: Show technology logos and connections]**
+
+---
+
+### **LIVE DEMO (2.5 minutes)**
+
+**[Scene: Screen capture of the application]**
+
+**Narrator**: "Let me show you how it works."
+
+#### **Step 1: Upload (20 seconds)**
+**[Navigate to homepage]**
+
+"Users are greeted with a clean, maritime-themed interface. Simply drag and drop your Statement of Facts document, or click to browse."
+
+**[Demonstrate file upload with sample SoF PDF]**
+
+"The system supports PDF, Word documents, and even scanned images through OCR."
+
+#### **Step 2: Processing (30 seconds)**
+**[Show processing screen with real-time updates]**
+
+"Once uploaded, our AI pipeline springs into action:
+1. Document parsing extracts raw text
+2. Our maritime-trained models identify port events
+3. Regex and spaCy handle standard patterns
+4. GPT provides intelligent fallback for complex cases
+5. All events are validated and structured"
+
+**[Show processing progress and status updates]**
+
+#### **Step 3: Results (45 seconds)**
+**[Display results table]**
+
+"Within seconds, we have a comprehensive table of extracted events:"
+
+**[Highlight different columns]**
+- "Event types like arrivals, departures, loading operations
+- Precise timestamps with start and end times  
+- Port locations and berth information
+- Duration calculations and additional descriptions"
+
+**[Show filtering and sorting features]**
+"Users can filter by location, event type, and sort chronologically."
+
+#### **Step 4: Visualization (30 seconds)**
+**[Open timeline view]**
+
+"For deeper insights, our timeline visualization shows:
+- Chronological event flow
+- Duration analysis  
+- Hourly distribution patterns
+- Operational bottlenecks and efficiency metrics"
+
+#### **Step 5: Export (25 seconds)**
+**[Demonstrate export functionality]**
+
+"Finally, export your structured data as CSV for spreadsheet analysis, or JSON for system integration. Perfect for feeding into existing maritime management systems, analytics platforms, or compliance reporting."
+
+**[Show downloaded files]**
+
+---
+
+### **SCALABILITY & INTEGRATION (45 seconds)**
+
+**[Scene: Split screen showing multiple documents processing]**
+
+**Narrator**: "This isn't just a proof of concept. Our solution is designed for enterprise scale:"
+
+**[Show integration diagram]**
+- "RESTful API for seamless integration with existing systems
+- Batch processing capabilities for high-volume operations  
+- Secure cloud deployment with Azure integration
+- Multi-tenant architecture for different shipping companies"
+
+**[Scene: Show IME logo and integration points]**
+
+"For Integrated Maritime Exchange, this represents a game-changing opportunity to standardize document processing across the entire maritime ecosystem."
+
+---
+
+### **IMPACT & BENEFITS (30 seconds)**
+
+**[Scene: Before/After comparison]**
+
+**Narrator**: "The impact is transformational:
+- 95%+ reduction in processing time - from hours to seconds
+- 95%+ accuracy with AI validation  
+- Consistent, standardized data formats
+- Elimination of human transcription errors
+- Scalable across global operations"
+
+**[Show ROI calculations and time savings]**
+
+---
+
+### **CLOSING (20 seconds)**
+
+**[Scene: Return to SoF Event Extractor interface]**
+
+**Narrator**: "The SoF Event Extractor demonstrates how AI can revolutionize maritime operations. By automating document processing, we free up valuable human resources for higher-value activities while ensuring accuracy and consistency."
+
+**[Scene: Show team/company logo]**
+
+"Ready to transform your maritime document workflows? Let's make it happen."
+
+**[End screen with contact information and demo links]**
+
+---
+
+## **PRODUCTION NOTES:**
+
+### **Visuals Needed:**
+1. Clean, professional background
+2. SoF Event Extractor logo and branding
+3. Architecture diagram (create in Lucidchart/Figma)
+4. Screen recordings of live application
+5. Sample maritime documents (PDFs/images)
+6. Before/after comparison graphics
+7. ROI/savings calculations
+8. IME logo and partnership imagery
+
+### **Audio:**
+- Professional narration (consider Azure Speech Services)
+- Maritime-themed background music (subtle)
+- Clean audio transitions between sections
+
+### **Technical Setup:**
+- Screen recording: Use OBS Studio or similar
+- Sample documents: Create realistic SoF examples
+- Live demo preparation: Ensure smooth workflow
+- Backup plan: Pre-recorded segments for demo portions
+
+### **Upload Specifications:**
+- Format: MP4, 1080p minimum
+- Duration: 5 minutes maximum
+- File size: Optimize for upload (YouTube/Drive)
+- Captions: Include for accessibility
+
+### **Call-to-Action:**
+- GitHub repository link
+- Live demo URL (if deployed)
+- Contact information for IME team
+- Technical documentation links

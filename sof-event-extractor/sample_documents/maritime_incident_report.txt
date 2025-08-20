@@ -1,0 +1,60 @@
+MARITIME INCIDENT REPORT - SAMPLE FOR TESTING
+
+INCIDENT REPORT NO: MIR-2025-0820
+DATE OF INCIDENT: August 15, 2025
+TIME: 14:30 UTC
+LOCATION: 35°42'N, 139°46'E (Tokyo Bay, Japan)
+
+VESSEL INFORMATION:
+- Vessel Name: MV Ocean Pioneer
+- IMO Number: 9876543210
+- Flag State: Panama
+- Vessel Type: Container Ship
+- Gross Tonnage: 45,000 GT
+- Captain: John Anderson
+- Classification Society: Lloyd's Register
+
+INCIDENT DETAILS:
+At approximately 14:30 UTC on August 15, 2025, the MV Ocean Pioneer experienced a minor collision with a fishing vessel while entering Tokyo Bay. The incident occurred during foggy conditions with visibility reduced to less than 500 meters.
+
+WEATHER CONDITIONS:
+- Wind: Southwest 15 knots
+- Sea State: 2-3 meters
+- Visibility: Less than 500m due to fog
+- Temperature: 28°C
+- Barometric Pressure: 1013.2 hPa
+
+SEQUENCE OF EVENTS:
+13:45 UTC - Vessel reduced speed to 8 knots due to fog
+14:15 UTC - Radar contact with multiple fishing vessels detected
+14:25 UTC - Sound signals initiated as per COLREGS
+14:30 UTC - Minor collision with fishing vessel "Sakura Maru"
+14:35 UTC - Both vessels checked for damage
+14:40 UTC - Coast Guard notified via VHF Channel 16
+
+DAMAGE ASSESSMENT:
+MV Ocean Pioneer: Minor paint scrapes on starboard bow
+Sakura Maru: Damage to port gunwale and fishing nets
+
+CORRECTIVE ACTIONS:
+- Reduced speed maintained until visibility improved
+- Additional lookout posted
+- Continuous radar monitoring implemented
+- Regular position reporting to Tokyo Bay Traffic Control
+
+REGULATORY COMPLIANCE:
+- IMO STCW Convention requirements followed
+- ISM Code procedures implemented
+- MARPOL regulations observed
+- Local port authority regulations complied with
+
+CONCLUSION:
+The incident was minor with no injuries reported. Both vessels were able to continue their operations after damage assessment. Weather conditions were the primary contributing factor.
+
+Report Prepared By: Chief Officer Sarah Mitchell
+Date: August 16, 2025
+Signature: S. Mitchell
+
+Port State Control Inspection scheduled for August 20, 2025
+Next safety drill: August 25, 2025
+Insurance claim reference: INS-2025-08-001
