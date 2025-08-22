@@ -31,7 +31,7 @@ class GPTExtractor:
         
         # Configure Gemini for embeddings
         gemini_api_key = os.getenv("GOOGLE_API_KEY")
-        if gemini_api_key and gemini_api_key != "your-gemini-api-key-here" and gemini_api_key != "AIzaSyAGzVYiyGkvNzuYTqHXEgHK5LGeDn_RMo8":
+        if gemini_api_key and gemini_api_key != "your-gemini-api-key-here" and gemini_api_key != "gpt-key-here":
             genai.configure(api_key=gemini_api_key)
             self.use_gemini = True
         else:

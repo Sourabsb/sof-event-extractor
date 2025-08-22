@@ -1,0 +1,20 @@
+[
+  {
+    "event": "Departure",
+    "start": "2025-08-20 13:15",
+    "end": "2025-08-20 13:45",
+    "location": null,
+    "description": "N/A\n \n0\n \n28\n \nMonday\n \n25-Aug-20\n24\n \n13:15\n \n13:45\n \nUnmooring\n \noperations.",
+    "confidence": 0.806,
+    "source": "gemini_enhanced"
+  },
+  {
+    "event": "Departure",
+    "start": null,
+    "end": null,
+    "location": null,
+    "description": "Vessel\n \nsailed.",
+    "confidence": 0.798,
+    "source": "gemini_enhanced"
+  }
+]

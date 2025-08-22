@@ -1,0 +1,83 @@
+{
+  "events": [
+    {
+      "Day": "Fri, 15 Aug",
+      "event": "Reduced speed to 8 knots",
+      "start_time_iso": "2025-08-15 13:45:00",
+      "end_time_iso": "NaT",
+      "laytime_counts": false,
+      "raw_line": "13:45 UTC - Vessel reduced speed to 8 knots due to fog",
+      "filename": "maritime_incident_report.txt",
+      "start_time_formatted": "2025-08-15 13:45:00",
+      "end_time_formatted": null
+    },
+    {
+      "Day": "Fri, 15 Aug",
+      "event": "Radar contact with multiple fishing vessels detected",
+      "start_time_iso": "2025-08-15 14:15:00",
+      "end_time_iso": "NaT",
+      "laytime_counts": false,
+      "raw_line": "14:15 UTC - Radar contact with multiple fishing vessels detected",
+      "filename": "maritime_incident_report.txt",
+      "start_time_formatted": "2025-08-15 14:15:00",
+      "end_time_formatted": null
+    },
+    {
+      "Day": "Fri, 15 Aug",
+      "event": "Sound signals initiated as per COLREGS",
+      "start_time_iso": "2025-08-15 14:25:00",
+      "end_time_iso": "NaT",
+      "laytime_counts": false,
+      "raw_line": "14:25 UTC - Sound signals initiated as per COLREGS",
+      "filename": "maritime_incident_report.txt",
+      "start_time_formatted": "2025-08-15 14:25:00",
+      "end_time_formatted": null
+    },
+    {
+      "Day": "Fri, 15 Aug",
+      "event": "Minor collision with fishing vessel",
+      "start_time_iso": "2025-08-15 14:30:00",
+      "end_time_iso": "NaT",
+      "laytime_counts": false,
+      "raw_line": "14:30 UTC - Minor collision with fishing vessel \"Sakura Maru\"",
+      "filename": "maritime_incident_report.txt",
+      "start_time_formatted": "2025-08-15 14:30:00",
+      "end_time_formatted": null
+    },
+    {
+      "Day": "Fri, 15 Aug",
+      "event": "Both vessels checked for damage",
+      "start_time_iso": "2025-08-15 14:35:00",
+      "end_time_iso": "NaT",
+      "laytime_counts": false,
+      "raw_line": "14:35 UTC - Both vessels checked for damage",
+      "filename": "maritime_incident_report.txt",
+      "start_time_formatted": "2025-08-15 14:35:00",
+      "end_time_formatted": null
+    },
+    {
+      "Day": "Fri, 15 Aug",
+      "event": "Coast Guard notified via VHF Channel 16",
+      "start_time_iso": "2025-08-15 14:40:00",
+      "end_time_iso": "NaT",
+      "laytime_counts": false,
+      "raw_line": "14:40 UTC - Coast Guard notified via VHF Channel 16",
+      "filename": "maritime_incident_report.txt",
+      "start_time_formatted": "2025-08-15 14:40:00",
+      "end_time_formatted": null
+    }
+  ],
+  "summary": {
+    "CREATED FOR": "MV Ocean Pioneer",
+    "VOYAGE FROM": "",
+    "VOYAGE TO": "",
+    "CARGO": "",
+    "PORT": "Tokyo Bay, Japan",
+    "OPERATION": "",
+    "DEMURRAGE": "",
+    "DISPATCH": "",
+    "LOAD/DISCH": "",
+    "CARGO QTY": ""
+  },
+  "events_count": 6
+}

@@ -1,0 +1,4 @@
+event,start,end,location,description,confidence,source
+Departure,,,,Unmooring operations.,0.856,gemini_enhanced
+Departure,,,,Vessel sailed.,0.798,gemini_enhanced
+Arrival,,,,| Shift change for shore personnel.,0.736,gemini_enhanced

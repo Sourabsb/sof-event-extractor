@@ -3,13 +3,16 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import ResultTable from '../components/ResultTable';
+import LayTimeCalculator from '../components/LayTimeCalculator';
 import Timeline from '../components/Timeline';
 import { 
   ClockIcon, 
   CheckCircleIcon, 
   ExclamationCircleIcon,
   ArrowLeftIcon,
-  ArrowPathIcon
+  ArrowPathIcon,
+  CalculatorIcon,
+  DocumentTextIcon
 } from '@heroicons/react/24/outline';
 
 const Results = () => {
@@ -21,6 +24,7 @@ const Results = () => {
   const [error, setError] = useState(null);
   const [showTimeline, setShowTimeline] = useState(false);
   const [retryCount, setRetryCount] = useState(0);
+  const [activeTab, setActiveTab] = useState('events'); // 'events' or 'laytime'
 
   const maxRetries = 30; // 30 retries * 2 seconds = 1 minute max wait
 
@@ -68,8 +72,9 @@ const Results = () => {
     try {
       toast.loading(`Preparing ${format.toUpperCase()} export...`);
       
+      const dataType = activeTab === 'laytime' ? 'laytime' : 'events';
       const response = await axios.post(
-        `http://localhost:8000/api/export/${jobId}?type=${format}`,
+        `http://localhost:8000/api/export/${jobId}?export_type=${format}&data_type=${dataType}`,
         {},
         { responseType: 'blob' }
       );
@@ -78,7 +83,7 @@ const Results = () => {
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement('a');
       link.href = url;
-      link.setAttribute('download', `sof_events_${jobId.substring(0, 8)}.${format}`);
+      link.setAttribute('download', `sof_${dataType}_${jobId.substring(0, 8)}.${format}`);
       document.body.appendChild(link);
       link.click();
       link.remove();
@@ -273,12 +278,56 @@ const Results = () => {
       {/* Results */}
       {job.status === 'completed' && job.events && (
         <>
-          <ResultTable
-            events={job.events}
-            jobId={jobId}
-            onExport={handleExport}
-            onViewTimeline={() => setShowTimeline(true)}
-          />
+          {/* Navigation Tabs */}
+          <div className="card">
+            <div className="flex space-x-1">
+              <button
+                onClick={() => setActiveTab('events')}
+                className={`
+                  flex items-center px-6 py-3 text-sm font-medium rounded-lg transition-colors
+                  ${activeTab === 'events'
+                    ? 'bg-maritime-blue text-white'
+                    : 'text-maritime-gray-600 hover:text-maritime-navy hover:bg-maritime-gray-50'
+                  }
+                `}
+              >
+                <DocumentTextIcon className="h-5 w-5 mr-2" />
+                Extracted Events ({job.events.length})
+              </button>
+              <button
+                onClick={() => setActiveTab('laytime')}
+                className={`
+                  flex items-center px-6 py-3 text-sm font-medium rounded-lg transition-colors
+                  ${activeTab === 'laytime'
+                    ? 'bg-maritime-blue text-white'
+                    : 'text-maritime-gray-600 hover:text-maritime-navy hover:bg-maritime-gray-50'
+                  }
+                `}
+              >
+                <CalculatorIcon className="h-5 w-5 mr-2" />
+                Laytime Calculator
+              </button>
+            </div>
+          </div>
+
+          {/* Tab Content */}
+          {activeTab === 'events' && (
+            <ResultTable
+              events={job.events}
+              jobId={jobId}
+              onExport={handleExport}
+              onViewTimeline={() => setShowTimeline(true)}
+            />
+          )}
+
+          {activeTab === 'laytime' && (
+            <LayTimeCalculator
+              jobId={jobId}
+              summary={job.summary || {}}
+              events={job.events}
+              onExport={handleExport}
+            />
+          )}
 
           {/* Timeline Modal */}
           {showTimeline && (

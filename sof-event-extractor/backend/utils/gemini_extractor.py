@@ -31,7 +31,7 @@ class GeminiEmbeddingExtractor:
         try:
             # Check if API key is available and valid
             google_api_key = os.getenv('GOOGLE_API_KEY')
-            if not google_api_key or google_api_key in ['your-google-api-key-here', 'AIzaSyAGzVYiyGkvNzuYTqHXEgHK5LGeDn_RMo8']:
+            if not google_api_key or google_api_key in ['your-google-api-key-here', 'gemini-api-here']:
                 raise ValueError("Google API key not properly configured")
                 
             # Don't actually configure genai here to avoid network calls during init

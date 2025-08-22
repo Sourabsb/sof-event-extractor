@@ -1,0 +1,29 @@
+[
+  {
+    "event": "Departure",
+    "start": null,
+    "end": null,
+    "location": null,
+    "description": "Unmooring operations.",
+    "confidence": 0.856,
+    "source": "gemini_enhanced"
+  },
+  {
+    "event": "Departure",
+    "start": null,
+    "end": null,
+    "location": null,
+    "description": "Vessel sailed.",
+    "confidence": 0.798,
+    "source": "gemini_enhanced"
+  },
+  {
+    "event": "Arrival",
+    "start": null,
+    "end": null,
+    "location": null,
+    "description": "| Shift change for shore personnel.",
+    "confidence": 0.736,
+    "source": "gemini_enhanced"
+  }
+]

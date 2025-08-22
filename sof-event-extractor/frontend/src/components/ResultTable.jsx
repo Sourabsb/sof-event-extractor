@@ -279,11 +279,11 @@ const ResultTable = ({ events, jobId, onExport, onViewTimeline }) => {
             </thead>
             <tbody className="bg-white divide-y divide-maritime-gray-200">
               {processedEvents.map((event, index) => {
-                const duration = event.start && event.end
+                const duration = (event.start_time_iso || event.start) && (event.end_time_iso || event.end)
                   ? (() => {
                       try {
-                        const startDate = new Date(event.start);
-                        const endDate = new Date(event.end);
+                        const startDate = new Date(event.start_time_iso || event.start);
+                        const endDate = new Date(event.end_time_iso || event.end);
                         const diffMs = endDate - startDate;
                         const hours = Math.floor(diffMs / (1000 * 60 * 60));
                         const minutes = Math.floor((diffMs % (1000 * 60 * 60)) / (1000 * 60));
@@ -309,19 +309,19 @@ const ResultTable = ({ events, jobId, onExport, onViewTimeline }) => {
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-maritime-gray-900">
                       <div className="flex items-center">
                         <CalendarIcon className="h-4 w-4 text-maritime-gray-400 mr-2" />
-                        {formatDateTime(event.start)}
+                        {formatDateTime(event.start_time_iso || event.start)}
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-maritime-gray-900">
                       <div className="flex items-center">
                         <CalendarIcon className="h-4 w-4 text-maritime-gray-400 mr-2" />
-                        {formatDateTime(event.end)}
+                        {formatDateTime(event.end_time_iso || event.end)}
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-maritime-gray-900">
                       <div className="flex items-center">
                         <MapPinIcon className="h-4 w-4 text-maritime-gray-400 mr-2" />
-                        {event.location || 'Not specified'}
+                        {event.location || event.filename || 'Not specified'}
                       </div>
                     </td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-maritime-gray-900">
@@ -331,8 +331,8 @@ const ResultTable = ({ events, jobId, onExport, onViewTimeline }) => {
                       </div>
                     </td>
                     <td className="px-6 py-4 text-sm text-maritime-gray-900">
-                      <div className="max-w-xs truncate" title={event.description}>
-                        {event.description || 'No description'}
+                      <div className="max-w-xs truncate" title={event.raw_line || event.description}>
+                        {event.raw_line || event.description || 'No description'}
                       </div>
                     </td>
                   </tr>
@@ -359,7 +359,7 @@ const ResultTable = ({ events, jobId, onExport, onViewTimeline }) => {
         </div>
         <div className="card text-center">
           <div className="text-2xl font-bold text-maritime-navy">
-            {processedEvents.filter(e => e.start && e.end).length}
+            {processedEvents.filter(e => (e.start_time_iso || e.start) && (e.end_time_iso || e.end)).length}
           </div>
           <div className="text-sm text-maritime-gray-600">With Duration</div>
         </div>
